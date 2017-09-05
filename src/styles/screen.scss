@@ -1,0 +1,350 @@
+@import 'utility';
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css?family=Oleo+Script:400,700|Oxygen:300,400,700');
+
+/*******************
+GENERAL
+*******************/
+
+$base-text-size: 16px;
+$base-font-family: 'Oxygen', sans-serif;
+
+html {
+  text-size-adjust: 100%;
+}
+
+body {
+  @include font-smoothing(on);
+
+  margin: 0;
+  font: $base-text-size / 1 $base-font-family;
+  background-image: url('https://subtlepatterns.com/patterns/footer_lodyas.png');
+  color: #363636;
+}
+
+main {
+  margin: 0 auto;
+}
+
+h1,
+p {
+  margin: 12px 0;
+}
+
+/*******************
+HEADING
+*******************/
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  background-color: hsla(0, 0%, 100%, 0.8);
+  border-bottom: 1px solid #e6e6e6;
+  z-index: 1;
+
+  .logo {
+    font-family: 'Oleo Script', cursive;
+    font-weight: 700;
+    font-size: 2em;
+    margin: 0 15px;
+  }
+
+  ul {
+    display: flex;
+    margin: 0;
+    padding-left: 0;
+  }
+
+  li {
+    list-style: none;
+    padding: 15px;
+    transition: all 0.3s ease 0s;
+    color: #363636;
+
+    &:focus,
+    &:hover {
+      color: #fff;
+      background: #363636;
+      cursor: pointer;
+
+      a:link,
+      a:visited {
+        color: #fff;
+        cursor: pointer;
+      }
+    }
+
+    a:link,
+    a:visited {
+      color: #363636;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+}
+
+.fade {
+  background-image: url('http://i.imgur.com/Wi4uEKk.png');
+  background-repeat: repeat-x;
+  height: 60px;
+  margin-top: -60px;
+}
+
+header {
+  background-image: url('https://subtlepatterns.com/patterns/crossword.png');
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 50px;
+  width: 100%;
+
+  .logo {
+    :link,
+    :visited,
+    :focus,
+    :hover,
+    :active {
+      text-decoration: none;
+      color: #363636;
+      cursor: pointer;
+    }
+  }
+
+  div.intro {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 100px;
+  }
+
+  img {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+  }
+
+  h1 {
+    font-family: 'Oleo Script', cursive;
+    font-weight: 400;
+    font-size: 2em;
+    border-radius: 5px;
+    height: 65%;
+    width: 355px;
+    padding: 20px;
+    margin: 0 25px;
+
+    p {
+      font: $base-text-size / 1 $base-font-family;
+    }
+  }
+}
+
+/*******************
+PORTFOLIO
+*******************/
+
+.portfolio ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #fff;
+  padding: 30px 0;
+  width: 100%;
+  overflow: visible;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-bottom: 1px solid #e6e6e6;
+  border-top: 1px solid #e6e6e6;
+
+  img {
+    padding-left: 0;
+    width: 220px;
+    height: 200px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px #ccc;
+  }
+
+  li {
+    list-style: none;
+    padding-left: 0;
+    margin: 15px;
+  }
+}
+
+/*******************
+BLOG POST
+*******************/
+
+article {
+  padding: 30px;
+  background-image: url('https://subtlepatterns.com/patterns/crossword.png');
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+
+  .boxes {
+    background-color: white;
+    border-radius: 5px;
+    width: 470px;
+    margin: 15px;
+    position: relative;
+    box-shadow: 3px 3px 5px grey;
+
+    .keep-reading-btn {
+      font-size: 0.75em;
+      padding: 10px;
+      position: absolute;
+      right: 20px;
+      bottom: 0;
+      border-radius: 5px;
+
+      &:link,
+      &:visited {
+        color: #777;
+      }
+    }
+  }
+
+  .content {
+    padding: 20px;
+
+    ul {
+      margin-top: 10px;
+      padding: 0;
+      list-style: none;
+
+      a:link,
+      a:visited {
+        color: #363636;
+        cursor: pointer;
+      }
+
+      li {
+        color: #bbb;
+        line-height: 1.5em;
+      }
+    }
+  }
+
+  .title {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+    line-height: 1.5em;
+  }
+
+  h3 {
+    margin: 0;
+  }
+
+  time {
+    font-size: 0.8em;
+    color: #ccc;
+  }
+
+  header {
+    width: auto;
+    background: #303030;
+    // background-image: url('https://subtlepatterns.com/patterns/debut_dark.png');
+    border-radius: 5px 5px 0 0;
+  }
+
+  // .blog-post {
+  //   background-image: url('https://github.com/m1g/portfolio/blob/master/public/images/code.png?raw=true');
+  // }
+}
+
+/*******************
+FOOTER
+*******************/
+
+footer {
+  color: white;
+  margin: 50px 50px 20px;
+  z-index: 1;
+
+  .contact-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+  }
+
+  .copyright {
+    font-size: 0.75em;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  h1 {
+    font-weight: normal;
+    font-size: 1.5em;
+  }
+}
+
+/*******************
+SOCIAL ICONS
+*******************/
+
+footer .social-icons a:link,
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+footer div ul.social-icons {
+  font-size: 1em;
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  padding-bottom: 45px;
+  margin-top: 10px;
+}
+
+.fa-twitter,
+.fa-github,
+.fa-medium,
+.fa-linkedin,
+.fa-3x {
+  display: block;
+  width: 0.9em;
+  height: 0.9em;
+  padding: 10px;
+  border-radius: 50%;
+  margin: 5px;
+  text-align: center;
+}
+
+.fa-twitter {
+  background: #0075db;
+}
+
+.fa-github {
+  background: #777;
+}
+
+.fa-medium {
+  background: #00ab6b;
+}
+
+.fa-linkedin {
+  background: #4875b4;
+}
+
+.fa-heart,
+.fa-1 {
+  color: red;
+}

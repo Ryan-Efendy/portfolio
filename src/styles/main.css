@@ -1,0 +1,317 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css?family=Oleo+Script:400,700|Oxygen:300,400,700");
+/*******************
+GENERAL
+*******************/
+html {
+  text-size-adjust: 100%;
+}
+
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  font: 16px 'Oxygen', sans-serif;
+  background-image: url('https://subtlepatterns.com/patterns/footer_lodyas.png');
+  color: #363636;
+}
+
+main {
+  margin: 0 auto;
+}
+
+h1,
+p {
+  margin: 12px 0;
+}
+
+/*******************
+HEADING
+*******************/
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-bottom: 1px solid #e6e6e6;
+  z-index: 1;
+}
+
+nav .logo {
+  font-family: 'Oleo Script', cursive;
+  font-weight: 700;
+  font-size: 2em;
+  margin: 0 15px;
+}
+
+nav ul {
+  display: flex;
+  margin: 0;
+  padding-left: 0;
+}
+
+nav li {
+  list-style: none;
+  padding: 15px;
+  transition: all 0.3s ease 0s;
+  color: #363636;
+}
+
+nav li:focus,
+nav li:hover {
+  color: #fff;
+  background: #363636;
+  cursor: pointer;
+}
+
+nav li:focus a:link,
+nav li:focus a:visited,
+nav li:hover a:link,
+nav li:hover a:visited {
+  color: #fff;
+  cursor: pointer;
+}
+
+nav li a:link,
+nav li a:visited {
+  color: #363636;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.fade {
+  background-image: url('http://i.imgur.com/Wi4uEKk.png');
+  background-repeat: repeat-x;
+  height: 60px;
+  margin-top: -60px;
+}
+
+/* header {
+  background-image: url('https://subtlepatterns.com/patterns/crossword.png');
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 50px;
+  width: 100%;
+} */
+
+header .logo :link,
+header .logo :visited,
+header .logo :focus,
+header .logo :hover,
+header .logo :active {
+  text-decoration: none;
+  color: #363636;
+  cursor: pointer;
+}
+
+header div.intro {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 100px;
+}
+
+header img {
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+}
+
+header h1 {
+  font-family: 'Oleo Script', cursive;
+  font-weight: 400;
+  font-size: 2em;
+  border-radius: 5px;
+  height: 65%;
+  width: 355px;
+  padding: 20px;
+  margin: 0 25px;
+}
+
+header h1 p {
+  font: 16px 'Oxygen', sans-serif;
+}
+
+/*******************
+PORTFOLIO
+*******************/
+.portfolio ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #fff;
+  padding: 30px 0;
+  width: 100%;
+  overflow: visible;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-bottom: 1px solid #e6e6e6;
+  border-top: 1px solid #e6e6e6;
+}
+.portfolio ul img {
+  padding-left: 0;
+  width: 220px;
+  height: 200px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px #ccc;
+}
+.portfolio ul li {
+  list-style: none;
+  padding-left: 0;
+  margin: 15px;
+}
+
+/*******************
+BLOG POST
+*******************/
+article {
+  padding: 30px;
+  background-image: url('https://subtlepatterns.com/patterns/crossword.png');
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+article .boxes {
+  background-color: white;
+  border-radius: 5px;
+  width: 470px;
+  margin: 15px;
+  position: relative;
+  box-shadow: 3px 3px 5px grey;
+}
+article .boxes .keep-reading-btn {
+  font-size: 0.75em;
+  padding: 10px;
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  border-radius: 5px;
+}
+article .boxes .keep-reading-btn:link,
+article .boxes .keep-reading-btn:visited {
+  color: #777;
+}
+article .content {
+  padding: 20px;
+}
+article .content ul {
+  margin-top: 10px;
+  padding: 0;
+  list-style: none;
+}
+article .content ul a:link,
+article .content ul a:visited {
+  color: #363636;
+  cursor: pointer;
+}
+article .content ul li {
+  color: #bbb;
+  line-height: 1.5em;
+}
+article .title {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+  line-height: 1.5em;
+}
+article h3 {
+  margin: 0;
+}
+article time {
+  font-size: 0.8em;
+  color: #ccc;
+}
+article header {
+  width: auto;
+  background: #303030;
+  border-radius: 5px 5px 0 0;
+}
+
+/*******************
+FOOTER
+*******************/
+footer {
+  color: white;
+  margin: 50px 50px 20px;
+  z-index: 1;
+}
+footer .contact-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .copyright {
+  font-size: 0.75em;
+}
+footer li {
+  list-style: none;
+}
+footer h1 {
+  font-weight: normal;
+  font-size: 1.5em;
+}
+
+/*******************
+SOCIAL ICONS
+*******************/
+footer .social-icons a:link,
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+footer div ul.social-icons {
+  font-size: 1em;
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  padding-bottom: 45px;
+  margin-top: 10px;
+}
+
+.fa-twitter,
+.fa-github,
+.fa-medium,
+.fa-linkedin,
+.fa-3x {
+  display: block;
+  width: 1.7em;
+  height: 1.6em;
+  padding: 10px;
+  border-radius: 50%;
+  margin: 5px;
+  text-align: center;
+}
+
+.fa-twitter {
+  background: #0075db;
+}
+
+.fa-github {
+  background: #777;
+}
+
+.fa-medium {
+  background: #00ab6b;
+}
+
+.fa-linkedin {
+  background: #4875b4;
+}
+
+.fa-heart,
+.fa-1 {
+  color: red;
+}
