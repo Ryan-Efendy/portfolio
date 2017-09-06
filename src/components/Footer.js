@@ -30,7 +30,7 @@ class Footer extends Component {
           </ul>
           <div className="copyright">
             <p>
-              Copyright &copy; 2016 Ryan Efendy. Built with{' '}
+              Copyright &copy; 2017 Ryan Efendy. Built with{' '}
               <i className="fa fa-heart fa-1" /> in Jakarta, Indonesia.
             </p>
           </div>

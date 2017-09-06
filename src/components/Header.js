@@ -1,38 +1,47 @@
 import React, { Component } from 'react';
-import { Menu, Segment, Container, Image } from 'semantic-ui-react';
+import {
+  Menu,
+  Segment,
+  Container,
+  Image,
+  Icon,
+  Popup
+} from 'semantic-ui-react';
 import Logo from '../images/logo.svg';
 
 export default class Header extends Component {
-  state = { activeItem: 'home' };
-
-  handleItemClick = (e, { name }) => this.setState({ activeItem: name });
-
   render() {
-    const { activeItem } = this.state;
-
     return (
       <div>
         <Menu pointing inverted>
           <Container>
             <Menu.Item as="a" header>
-              <Image size="mini" src={Logo} style={{ marginRight: '1.5em' }} />
-              Project Name
+              Made in
+              <Image size="mini" src={Logo} />
+              With &nbsp; <Icon color="red" name="heart" />
             </Menu.Item>
             <Menu.Menu position="right">
-              <Menu.Item
-                name="home"
-                active={activeItem === 'home'}
-                onClick={this.handleItemClick}
-              />
+              <Menu.Item name="home" href="/" />
               <Menu.Item
                 name="resume"
-                active={activeItem === 'resume'}
-                onClick={this.handleItemClick}
+                href="https://drive.google.com/file/d/0B1DdlIvOilS5U3NBQnc0Y3lfckU/view"
+                target="_blank"
               />
-              <Menu.Item
-                name="Contact"
-                active={activeItem === 'Contact'}
-                onClick={this.handleItemClick}
+              <Popup
+                trigger={<Menu.Item name="Contact" />}
+                content={
+                  <div>
+                    Send me an email at &nbsp;
+                    <a
+                      href="mailto:ryanefendy95@gmail.com?Subject=Hello"
+                      target="_top"
+                    >
+                      ryanefendy95@gmail.com
+                    </a>
+                    <Icon disabled name="smile" size="large" />
+                  </div>
+                }
+                on="click"
               />
             </Menu.Menu>
           </Container>
@@ -51,17 +60,17 @@ export default class Header extends Component {
           <h1>
             Hello, my name is Ryan <i className="em em-panda_face" />
             <p>
-              I'm a <i className="em em-octocat" /> passionate programmer,
-              <i className="em em-basketball" /> basketball enthusiast and
-              <i className="em em-rice" /> food lover!
+              <i className="em em-octocat" /> Passionate programmer
             </p>
             <p>
-              Site Reliability Engineer at{' '}
-              <img
-                src="https://image.flaticon.com/icons/svg/174/174861.svg"
-                alt="PayPal"
-                style={{ height: 24, width: 24 }}
-              />
+              <i className="em em-basketball" /> Basketball enthusiast
+            </p>
+            <p>
+              <i className="em em-coffee" /> Coffee connoisseur/addict
+            </p>
+            <p>
+              <i className="em em-mountain_bicyclist" /> Enjoys hiking and being
+              outdoors
             </p>
           </h1>
         </Segment>
