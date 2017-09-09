@@ -19,8 +19,8 @@ const Project = () => (
     <Container>
       <Header as="h2" textAlign="center" content="Featured Projects" />
       <Divider section />
-      <Grid relaxed columns={4}>
-        <Grid.Column>
+      <Grid centered textAlign="center" verticalAlign="middle">
+        <Grid.Column computer={4} mobile={16} tablet={4}>
           <Card
             href="https://github.com/ryanefendy95/reactnd-project-myreads"
             target="_blank"
@@ -45,7 +45,7 @@ const Project = () => (
           </Card>
         </Grid.Column>
 
-        <Grid.Column>
+        <Grid.Column computer={4} mobile={16} tablet={4}>
           <Card href="https://github.com/ryanefendy95/Readable" target="_blank">
             <Image
               src="https://user-images.githubusercontent.com/12979345/30095755-69ed0bd4-9289-11e7-960f-aa4c68eee2a6.png"
@@ -66,7 +66,7 @@ const Project = () => (
           </Card>
         </Grid.Column>
 
-        <Grid.Column>
+        <Grid.Column computer={4} mobile={16} tablet={4}>
           <Card
             href="https://github.com/ryanefendy95/Reduxstagram"
             target="_blank"
@@ -89,7 +89,7 @@ const Project = () => (
           </Card>
         </Grid.Column>
 
-        <Grid.Column>
+        <Grid.Column computer={4} mobile={16} tablet={4}>
           <Card href="https://github.com/ryanefendy95/Swipeify" target="_blank">
             <Image
               src="https://cloud.githubusercontent.com/assets/12979345/20901042/b93b4f74-bafe-11e6-9b6a-9b88638d3d15.png"
