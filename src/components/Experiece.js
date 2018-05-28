@@ -14,8 +14,29 @@ const Experience = () => (
       <Divider section />
       <Timeline>
         <TimelineEvent
-          title="Jun 2017 – Present"
-          createdAt="Site Reliability Engineer at PayPal"
+          title="Sept 2017 – Dec 2017"
+          createdAt="Software Development Engineer @ Amazon AWS Machine Learning"
+          iconColor="#757575"
+          container="card"
+          style={{
+            boxShadow: '0 0 6px 1px #BD3B36',
+            border: '1px solid #777',
+            borderRadius: 3
+          }}
+          cardHeaderStyle={{ backgroundColor: 'lightgreen', color: '#000000' }}
+        >
+          <Label.Group color="green">
+            <Label as="a">Python</Label>
+            <Label as="a">AWS</Label>
+            <Label as="a">TensorFlow</Label>
+            <Label as="a">PyTorch</Label>
+            <Label as="a">Docker </Label>
+          </Label.Group>
+        </TimelineEvent>
+
+        <TimelineEvent
+          title="Jun 2017 – Sept 2017"
+          createdAt="Site Reliability Engineer @ PayPal"
           iconColor="#757575"
           container="card"
           style={{
@@ -40,7 +61,7 @@ const Experience = () => (
 
         <TimelineEvent
           title="Jun 2016 – Jun 2017"
-          createdAt="Applications Engineer at Oracle"
+          createdAt="Applications Engineer @ Oracle"
           icon={<i />}
           iconColor="#757575"
           container="card"
@@ -61,7 +82,7 @@ const Experience = () => (
 
         <TimelineEvent
           title="Mar 2016 – May 2016"
-          createdAt="Software Engineer at JPMorgan Chase"
+          createdAt="Software Engineer @ JPMorgan Chase"
           icon={<i />}
           iconColor="#757575"
           container="card"
@@ -80,8 +101,8 @@ const Experience = () => (
         </TimelineEvent>
 
         <TimelineEvent
-          title="Mar 2015 – Sep 2015"
-          createdAt="Software Engineer at Comcast"
+          title="Mar 2015 – Sept 2015"
+          createdAt="Software Engineer @ Comcast"
           icon={<i />}
           iconColor="#757575"
           container="card"

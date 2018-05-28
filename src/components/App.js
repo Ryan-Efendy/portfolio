@@ -52,13 +52,9 @@ class App extends Component {
           <Header />
         </header>
         <Experience />
-        <Skills />
-        <Project />
-        <Activity
-          repos={this.state.repos
-            .sort((a, b) => new Date(b.pushed_at) - new Date(a.pushed_at))
-            .slice(0, 7)}
-        />
+        {/* <Skills /> */}
+        {/* <Project /> */}
+        <Activity repos={this.state.repos.sort((a, b) => new Date(b.pushed_at) - new Date(a.pushed_at)).slice(0, 7)} />
         <Footer location={this.state.location} />
       </div>
     );

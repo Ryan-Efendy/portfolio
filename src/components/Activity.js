@@ -1,12 +1,5 @@
 import React, { Component } from 'react';
-import {
-  Card,
-  Feed,
-  Container,
-  Header,
-  Divider,
-  Grid
-} from 'semantic-ui-react';
+import { Card, Feed, Container, Header, Divider, Grid } from 'semantic-ui-react';
 import moment from 'moment';
 import { Timeline } from 'react-twitter-widgets';
 
@@ -51,9 +44,7 @@ class Activity extends Component {
                   <Feed>{this.renderProjects()}</Feed>
                 </Card.Content>
                 <Card.Content extra>
-                  <a href="https://github.com/ryanefendy95?tab=repositories">
-                    See All Projects
-                  </a>
+                  <a href="https://github.com/ryanefendy95?tab=repositories">See All Projects</a>
                 </Card.Content>
               </Card>
             </Grid.Column>
@@ -69,11 +60,9 @@ class Activity extends Component {
                       <Feed.Content>
                         <Feed.Date content="1 day ago" />
                         <Feed.Summary>
-                          Lorem ipsum dolor sit amet, consectetur adipisicing
-                          elit. Blanditiis ab ratione, pariatur provident labore
-                          hic amet aspernatur, nostrum impedit quia debitis
-                          nulla maxime ipsum, culpa veniam dolores qui! Itaque,
-                          atque.
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis ab ratione, pariatur
+                          provident labore hic amet aspernatur, nostrum impedit quia debitis nulla maxime ipsum, culpa
+                          veniam dolores qui! Itaque, atque.
                         </Feed.Summary>
                       </Feed.Content>
                     </Feed.Event>
@@ -81,11 +70,9 @@ class Activity extends Component {
                       <Feed.Content>
                         <Feed.Date content="2 day ago" />
                         <Feed.Summary>
-                          Lorem ipsum dolor sit amet, consectetur adipisicing
-                          elit. Blanditiis ab ratione, pariatur provident labore
-                          hic amet aspernatur, nostrum impedit quia debitis
-                          nulla maxime ipsum, culpa veniam dolores qui! Itaque,
-                          atque.
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis ab ratione, pariatur
+                          provident labore hic amet aspernatur, nostrum impedit quia debitis nulla maxime ipsum, culpa
+                          veniam dolores qui! Itaque, atque.
                         </Feed.Summary>
                       </Feed.Content>
                     </Feed.Event>
@@ -101,10 +88,10 @@ class Activity extends Component {
               <Timeline
                 dataSource={{
                   sourceType: 'profile',
-                  screenName: 'ryandesprezzatu'
+                  screenName: '_ryanefendy'
                 }}
                 options={{
-                  username: 'ryandesprezzatu',
+                  username: '_ryanefendy',
                   height: '500',
                   width: '400'
                 }}
