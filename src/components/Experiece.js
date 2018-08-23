@@ -1,6 +1,17 @@
-import React from 'react';
-import { Container, Header, Label, Divider } from 'semantic-ui-react';
-import { Timeline, TimelineEvent } from 'react-event-timeline';
+import React from "react";
+import { Container, Header, Label, Divider } from "semantic-ui-react";
+import { Timeline, TimelineEvent } from "react-event-timeline";
+import { Icon } from "semantic-ui-react";
+
+const titleStyle = {
+  fontWeight: "bold",
+  fontSize: "initial"
+};
+
+const subtitleStyle = {
+  fontWeight: "bold",
+  color: "black"
+};
 
 const Experience = () => (
   <div
@@ -14,16 +25,46 @@ const Experience = () => (
       <Divider section />
       <Timeline>
         <TimelineEvent
-          title="Sept 2017 – Dec 2017"
-          createdAt="Software Development Engineer @ Amazon AWS Machine Learning"
-          iconColor="#757575"
+          title="Software Development Engineer @ Microsoft"
+          titleStyle={titleStyle}
+          subtitle="Sept 2017 – Dec 2017"
+          subtitleStyle={subtitleStyle}
+          // createdAt="Software Development Engineer @ Microsoft"
+          icon={<Icon fitted name="briefcase" size="large" />}
+          iconColor="#1C2825"
           container="card"
           style={{
-            boxShadow: '0 0 6px 1px #BD3B36',
-            border: '1px solid #777',
+            boxShadow: "0 0 6px 1px #BD3B36",
+            border: "1px solid #777",
+            borderRadius: 3,
+            fontWeight: 400
+          }}
+          cardHeaderStyle={{ backgroundColor: "dodgerblue", color: "#000000" }}
+        >
+          <Label.Group color="blue">
+            <Label as="a">Angular</Label>
+            <Label as="a">C#</Label>
+            <Label as="a">ASP.NET</Label>
+            <Label as="a">IIS</Label>
+            <Label as="a">Azure</Label>
+          </Label.Group>
+        </TimelineEvent>
+
+        <TimelineEvent
+          title="Software Development Engineer @ Amazon AWS Machine Learning"
+          subtitle="Sept 2017 – Dec 2017"
+          titleStyle={titleStyle}
+          subtitleStyle={subtitleStyle}
+          // createdAt=""
+          icon={<Icon fitted name="briefcase" size="large" />}
+          iconColor="#1C2825"
+          container="card"
+          style={{
+            boxShadow: "0 0 6px 1px #BD3B36",
+            border: "1px solid #777",
             borderRadius: 3
           }}
-          cardHeaderStyle={{ backgroundColor: 'lightgreen', color: '#000000' }}
+          cardHeaderStyle={{ backgroundColor: "lightgreen", color: "#000000" }}
         >
           <Label.Group color="green">
             <Label as="a">Python</Label>
@@ -35,16 +76,19 @@ const Experience = () => (
         </TimelineEvent>
 
         <TimelineEvent
-          title="Jun 2017 – Sept 2017"
-          createdAt="Site Reliability Engineer @ PayPal"
-          iconColor="#757575"
+          title="Site Reliability Engineer @ PayPal"
+          subtitle="Jun 2017 – Sept 2017"
+          titleStyle={titleStyle}
+          subtitleStyle={subtitleStyle}
+          icon={<Icon fitted name="briefcase" size="large" />}
+          iconColor="#1C2825"
           container="card"
           style={{
-            boxShadow: '0 0 6px 1px #BD3B36',
-            border: '1px solid #777',
+            boxShadow: "0 0 6px 1px #BD3B36",
+            border: "1px solid #777",
             borderRadius: 3
           }}
-          cardHeaderStyle={{ backgroundColor: '#5789de', color: '#000000' }}
+          cardHeaderStyle={{ backgroundColor: "#5789de", color: "#000000" }}
         >
           <Label.Group color="blue">
             <Label as="a">React</Label>
@@ -60,15 +104,17 @@ const Experience = () => (
         </TimelineEvent>
 
         <TimelineEvent
-          title="Jun 2016 – Jun 2017"
-          createdAt="Applications Engineer @ Oracle"
-          icon={<i />}
-          iconColor="#757575"
+          title="Applications Engineer @ Oracle"
+          subtitle="Jun 2016 – Jun 2017"
+          titleStyle={titleStyle}
+          subtitleStyle={subtitleStyle}
+          icon={<Icon fitted name="briefcase" size="large" />}
+          iconColor="#1C2825"
           container="card"
-          cardHeaderStyle={{ backgroundColor: '#f8013b', color: '#000000' }}
+          cardHeaderStyle={{ backgroundColor: "#f8013b", color: "#000000" }}
           style={{
-            boxShadow: '0 0 6px 1px #BD3B36',
-            border: '1px solid #777',
+            boxShadow: "0 0 6px 1px #BD3B36",
+            border: "1px solid #777",
             borderRadius: 3
           }}
         >
@@ -81,15 +127,17 @@ const Experience = () => (
         </TimelineEvent>
 
         <TimelineEvent
-          title="Mar 2016 – May 2016"
-          createdAt="Software Engineer @ JPMorgan Chase"
-          icon={<i />}
-          iconColor="#757575"
+          title="Software Engineer @ JPMorgan Chase"
+          subtitle="Mar 2016 – May 2016"
+          titleStyle={titleStyle}
+          subtitleStyle={subtitleStyle}
+          icon={<Icon fitted name="briefcase" size="large" />}
+          iconColor="#1C2825"
           container="card"
-          cardHeaderStyle={{ backgroundColor: '#b8e2ee', color: '#000000' }}
+          cardHeaderStyle={{ backgroundColor: "#b8e2ee", color: "#000000" }}
           style={{
-            boxShadow: '0 0 6px 1px #BD3B36',
-            border: '1px solid #777',
+            boxShadow: "0 0 6px 1px #BD3B36",
+            border: "1px solid #777",
             borderRadius: 3
           }}
         >
@@ -101,15 +149,17 @@ const Experience = () => (
         </TimelineEvent>
 
         <TimelineEvent
-          title="Mar 2015 – Sept 2015"
-          createdAt="Software Engineer @ Comcast"
-          icon={<i />}
-          iconColor="#757575"
+          title="Software Engineer @ Comcast"
+          subtitle="Mar 2015 – Sept 2015"
+          titleStyle={titleStyle}
+          subtitleStyle={subtitleStyle}
+          icon={<Icon fitted name="briefcase" size="large" />}
+          iconColor="#1C2825"
           container="card"
-          cardHeaderStyle={{ backgroundColor: '#e6edf7', color: '#000000' }}
+          cardHeaderStyle={{ backgroundColor: "#e6edf7", color: "#000000" }}
           style={{
-            boxShadow: '0 0 6px 1px #BD3B36',
-            border: '1px solid #777',
+            boxShadow: "0 0 6px 1px #BD3B36",
+            border: "1px solid #777",
             borderRadius: 3
           }}
         >

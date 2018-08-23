@@ -1,6 +1,13 @@
-import React, { Component } from 'react';
-import { Menu, Segment, Container, Image, Icon, Popup } from 'semantic-ui-react';
-import Logo from '../images/logo.svg';
+import React, { Component } from "react";
+import {
+  Menu,
+  Segment,
+  Container,
+  Image,
+  Icon,
+  Popup
+} from "semantic-ui-react";
+import Logo from "../images/logo.svg";
 
 export default class Header extends Component {
   render() {
@@ -25,7 +32,10 @@ export default class Header extends Component {
                 content={
                   <div>
                     Send me an email at &nbsp;
-                    <a href="mailto:ryanefendy95@gmail.com?Subject=Hello" target="_top">
+                    <a
+                      href="mailto:ryanefendy95@gmail.com?Subject=Hello"
+                      target="_top"
+                    >
                       ryanefendy95@gmail.com
                     </a>
                     <Icon disabled name="smile" size="large" />
@@ -43,12 +53,18 @@ export default class Header extends Component {
           }}
           className="intro"
         >
-          <img src="https://avatars3.githubusercontent.com/u/12979345?v=4&s=400" alt="profile_pic" />
+          <img
+            src="https://avatars3.githubusercontent.com/u/12979345?v=4&s=400"
+            alt="profile_pic"
+          />
           <h1>
             Hello, my name is Ryan <i className="em em-monkey_face" />
             <p>
-              <i className="em em-computer" /> Software Engineer @{' '}
-              <a href="https://www.microsoft.com/en-us" style={{ color: 'chartreuse' }}>
+              <i className="em em-computer" /> Software Engineer @{" "}
+              <a
+                href="https://www.microsoft.com/en-us"
+                style={{ color: "cornflowerblue" }}
+              >
                 Microsoft
               </a>
             </p>
