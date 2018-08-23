@@ -21,10 +21,10 @@ export default class Header extends Component {
               With &nbsp; <Icon color="red" name="heart" />
             </Menu.Item>
             <Menu.Menu position="right">
-              <Menu.Item name="home" href="/" />
+              <Menu.Item name="home" href="https://ryanefendy.com/" />
               <Menu.Item
                 name="resume"
-                href="https://drive.google.com/file/d/0B1DdlIvOilS5U3NBQnc0Y3lfckU/view"
+                href="https://drive.google.com/file/d/0B1DdlIvOilS5OGZoc0F0ZkM0MjQ/view"
                 target="_blank"
               />
               <Popup
