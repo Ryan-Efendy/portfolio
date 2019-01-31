@@ -7,7 +7,6 @@ import {
   Icon,
   Popup
 } from 'semantic-ui-react';
-import Logo from '../images/logo.svg';
 
 const Header = () => (
   <div>
@@ -15,7 +14,10 @@ const Header = () => (
       <Container>
         <Menu.Item as="a" header>
           Made in
-          <Image size="mini" src={Logo} />
+          <Image
+            size="mini"
+            src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+          />
           With &nbsp; <Icon color="red" name="heart" />
         </Menu.Item>
         <Menu.Menu position="right">
