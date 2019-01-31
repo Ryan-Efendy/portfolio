@@ -9,6 +9,7 @@ import {
 } from 'semantic-ui-react';
 import moment from 'moment';
 import { Timeline } from 'react-twitter-widgets';
+import InstagramEmbed from 'react-instagram-embed';
 
 class Activity extends Component {
   renderProjects = () =>
@@ -56,7 +57,20 @@ class Activity extends Component {
               </Card>
             </Grid.Column>
 
-            <Grid.Column computer={5} mobile={16} tablet={5}>
+            <InstagramEmbed
+              url="https://instagr.am/p/Zw9o4/"
+              maxWidth={320}
+              hideCaption={false}
+              containerTagName="div"
+              protocol=""
+              injectScript
+              onLoading={() => {}}
+              onSuccess={() => {}}
+              onAfterRender={() => {}}
+              onFailure={() => {}}
+            />
+
+            {/* <Grid.Column computer={5} mobile={16} tablet={5}>
               <Card centered>
                 <Card.Content>
                   <Card.Header>Personal Blog</Card.Header>
@@ -93,7 +107,7 @@ class Activity extends Component {
                   <a href="https://medium.com/@Ryan-Efendy">See All Stories</a>
                 </Card.Content>
               </Card>
-            </Grid.Column>
+            </Grid.Column> */}
 
             <Grid.Column computer={6} mobile={16} tablet={6}>
               <Timeline
