@@ -67,13 +67,21 @@ const Header = () => (
           </a>
         </p>
         <p>
-          <i className="em em-basketball" /> Basketball enthusiast
+          <i className="em em-basketball" /> Basketball enthusiast{' '}
+          <i className="em em-bell" />
+          <i className="em em-bell" />
+          <i className="em em-bell" /> 76ers #TrustTheProcess
         </p>
         <p>
-          <i className="em em-coffee" /> Coffee lover
+          <i className="em em-coffee" /> Espresso lover
         </p>
         <p>
           <i className="em em-bulb" /> Ask me about Effective Altruism
+        </p>
+        <p>
+          <i className="em em-round_pushpin" /> Jakarta{' '}
+          <i className="em em-airplane" /> Philly{' '}
+          <i className="em em-airplane" /> <b>Seattle</b>
         </p>
       </h1>
     </Segment>

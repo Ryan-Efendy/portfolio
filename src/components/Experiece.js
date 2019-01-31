@@ -26,7 +26,7 @@ const Experience = () => (
         <TimelineEvent
           title="Software Development Engineer @ Microsoft"
           titleStyle={titleStyle}
-          subtitle="Sept 2017 – Dec 2017"
+          subtitle="Aug 2018 – Current"
           subtitleStyle={subtitleStyle}
           // createdAt="Software Development Engineer @ Microsoft"
           icon={<Icon fitted name="briefcase" size="large" />}
@@ -46,6 +46,31 @@ const Experience = () => (
             <Label as="a">ASP.NET</Label>
             <Label as="a">IIS</Label>
             <Label as="a">Azure</Label>
+          </Label.Group>
+        </TimelineEvent>
+
+        <TimelineEvent
+          title="Coding Instructor @ Product School"
+          titleStyle={titleStyle}
+          subtitle="Sept 2018 – Nov 2018"
+          subtitleStyle={subtitleStyle}
+          icon={<Icon fitted name="briefcase" size="large" />}
+          iconColor="#1C2825"
+          container="card"
+          style={{
+            boxShadow: '0 0 6px 1px #BD3B36',
+            border: '1px solid #777',
+            borderRadius: 3,
+            fontWeight: 400
+          }}
+          cardHeaderStyle={{ backgroundColor: 'lightcoral', color: '#000000' }}
+        >
+          <Label.Group color="orange">
+            <Label as="a">HTML</Label>
+            <Label as="a">JavaScript</Label>
+            <Label as="a">CSS</Label>
+            <Label as="a">Ruby on Rails</Label>
+            <Label as="a">Python</Label>
           </Label.Group>
         </TimelineEvent>
 

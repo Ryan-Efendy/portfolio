@@ -29,7 +29,7 @@ const Footer = () => (
       <div className="copyright">
         <p>
           Copyright &copy; 2017 Ryan Efendy. Built with{' '}
-          <i className="fa fa-heart fa-1" /> in Jakarta, Indonesia.
+          <i className="fa fa-heart fa-1" /> in Phoenix, Arizona.
         </p>
       </div>
     </div>
