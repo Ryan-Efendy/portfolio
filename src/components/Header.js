@@ -12,16 +12,17 @@ const Header = () => (
   <div>
     <Menu pointing inverted>
       <Container>
-        <Menu.Item as="a" header>
+        <Menu.Item as="a" header disabled>
           Made in
           <Image
             size="mini"
             src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
           />
-          With &nbsp; <Icon color="red" name="heart" />
+          With &nbsp; <Icon color="red" name="heart" />{' '}
+          <Icon color="red" name="heart" /> <Icon color="red" name="heart" />
         </Menu.Item>
         <Menu.Menu position="right">
-          <Menu.Item name="home" href="https://ryanefendy.com/" />
+          {/* <Menu.Item name="home" href="https://ryanefendy.com/" /> */}
           <Menu.Item
             name="resume"
             href="https://drive.google.com/file/d/1AMnPgQsw1eIsT5jonpJ5jd0Q8tTGiuOw/view?usp=sharing"
