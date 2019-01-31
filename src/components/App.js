@@ -1,21 +1,14 @@
 import React, { Component } from 'react';
-import Footer from '../components/Footer';
-import Header from '../components/Header';
-import Skills from '../components/Skills';
-import Project from '../components//Project';
-import Experience from '../components/Experiece';
-import Activity from '../components/Activity';
+import Footer from './Footer';
+import Header from './Header';
+import Experience from './Experiece';
+import Activity from './Activity';
 
 const GITHUBURL = 'https://api.github.com/users/';
-const USERNAME = 'ryanefendy95';
+const USERNAME = 'Ryan-Efendy';
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      repos: []
-    };
-  }
+  state = { repos: [] };
 
   componentDidMount() {
     this.getProfile();
@@ -24,9 +17,7 @@ class App extends Component {
   getProfile() {
     window
       .fetch(`${GITHUBURL}${USERNAME}`)
-      .then(response => {
-        return response.json();
-      })
+      .then(response => response.json())
       .then(data => {
         this.getRepos(data.repos_url);
       });
@@ -35,9 +26,7 @@ class App extends Component {
   getRepos(url) {
     window
       .fetch(url)
-      .then(response => {
-        return response.json();
-      })
+      .then(response => response.json())
       .then(data => {
         this.setState({
           repos: data
@@ -46,6 +35,7 @@ class App extends Component {
   }
 
   render() {
+    const { repos, location } = this.state;
     return (
       <div>
         <header>
@@ -54,8 +44,12 @@ class App extends Component {
         <Experience />
         {/* <Skills /> */}
         {/* <Project /> */}
-        <Activity repos={this.state.repos.sort((a, b) => new Date(b.pushed_at) - new Date(a.pushed_at)).slice(0, 7)} />
-        <Footer location={this.state.location} />
+        <Activity
+          repos={repos
+            .sort((a, b) => new Date(b.pushed_at) - new Date(a.pushed_at))
+            .slice(0, 7)}
+        />
+        <Footer location={location} />
       </div>
     );
   }

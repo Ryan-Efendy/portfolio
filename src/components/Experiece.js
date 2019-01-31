@@ -1,16 +1,15 @@
-import React from "react";
-import { Container, Header, Label, Divider } from "semantic-ui-react";
-import { Timeline, TimelineEvent } from "react-event-timeline";
-import { Icon } from "semantic-ui-react";
+import React from 'react';
+import { Container, Header, Label, Divider, Icon } from 'semantic-ui-react';
+import { Timeline, TimelineEvent } from 'react-event-timeline';
 
 const titleStyle = {
-  fontWeight: "bold",
-  fontSize: "initial"
+  fontWeight: 'bold',
+  fontSize: 'initial'
 };
 
 const subtitleStyle = {
-  fontWeight: "bold",
-  color: "black"
+  fontWeight: 'bold',
+  color: 'black'
 };
 
 const Experience = () => (
@@ -34,12 +33,12 @@ const Experience = () => (
           iconColor="#1C2825"
           container="card"
           style={{
-            boxShadow: "0 0 6px 1px #BD3B36",
-            border: "1px solid #777",
+            boxShadow: '0 0 6px 1px #BD3B36',
+            border: '1px solid #777',
             borderRadius: 3,
             fontWeight: 400
           }}
-          cardHeaderStyle={{ backgroundColor: "dodgerblue", color: "#000000" }}
+          cardHeaderStyle={{ backgroundColor: 'dodgerblue', color: '#000000' }}
         >
           <Label.Group color="blue">
             <Label as="a">Angular</Label>
@@ -60,11 +59,11 @@ const Experience = () => (
           iconColor="#1C2825"
           container="card"
           style={{
-            boxShadow: "0 0 6px 1px #BD3B36",
-            border: "1px solid #777",
+            boxShadow: '0 0 6px 1px #BD3B36',
+            border: '1px solid #777',
             borderRadius: 3
           }}
-          cardHeaderStyle={{ backgroundColor: "lightgreen", color: "#000000" }}
+          cardHeaderStyle={{ backgroundColor: 'lightgreen', color: '#000000' }}
         >
           <Label.Group color="green">
             <Label as="a">Python</Label>
@@ -84,11 +83,11 @@ const Experience = () => (
           iconColor="#1C2825"
           container="card"
           style={{
-            boxShadow: "0 0 6px 1px #BD3B36",
-            border: "1px solid #777",
+            boxShadow: '0 0 6px 1px #BD3B36',
+            border: '1px solid #777',
             borderRadius: 3
           }}
-          cardHeaderStyle={{ backgroundColor: "#5789de", color: "#000000" }}
+          cardHeaderStyle={{ backgroundColor: '#5789de', color: '#000000' }}
         >
           <Label.Group color="blue">
             <Label as="a">React</Label>
@@ -111,10 +110,10 @@ const Experience = () => (
           icon={<Icon fitted name="briefcase" size="large" />}
           iconColor="#1C2825"
           container="card"
-          cardHeaderStyle={{ backgroundColor: "#f8013b", color: "#000000" }}
+          cardHeaderStyle={{ backgroundColor: '#f8013b', color: '#000000' }}
           style={{
-            boxShadow: "0 0 6px 1px #BD3B36",
-            border: "1px solid #777",
+            boxShadow: '0 0 6px 1px #BD3B36',
+            border: '1px solid #777',
             borderRadius: 3
           }}
         >
@@ -134,10 +133,10 @@ const Experience = () => (
           icon={<Icon fitted name="briefcase" size="large" />}
           iconColor="#1C2825"
           container="card"
-          cardHeaderStyle={{ backgroundColor: "#b8e2ee", color: "#000000" }}
+          cardHeaderStyle={{ backgroundColor: '#b8e2ee', color: '#000000' }}
           style={{
-            boxShadow: "0 0 6px 1px #BD3B36",
-            border: "1px solid #777",
+            boxShadow: '0 0 6px 1px #BD3B36',
+            border: '1px solid #777',
             borderRadius: 3
           }}
         >
@@ -156,10 +155,10 @@ const Experience = () => (
           icon={<Icon fitted name="briefcase" size="large" />}
           iconColor="#1C2825"
           container="card"
-          cardHeaderStyle={{ backgroundColor: "#e6edf7", color: "#000000" }}
+          cardHeaderStyle={{ backgroundColor: '#e6edf7', color: '#000000' }}
           style={{
-            boxShadow: "0 0 6px 1px #BD3B36",
-            border: "1px solid #777",
+            boxShadow: '0 0 6px 1px #BD3B36',
+            border: '1px solid #777',
             borderRadius: 3
           }}
         >

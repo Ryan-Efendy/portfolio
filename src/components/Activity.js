@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 import {
   Card,
   Feed,
@@ -6,28 +6,26 @@ import {
   Header,
   Divider,
   Grid
-} from "semantic-ui-react";
-import moment from "moment";
-import { Timeline } from "react-twitter-widgets";
+} from 'semantic-ui-react';
+import moment from 'moment';
+import { Timeline } from 'react-twitter-widgets';
 
 class Activity extends Component {
   renderProjects = () =>
-    this.props.repos.map((repo, i) => {
-      return (
-        <Feed.Event key={i}>
-          <Feed.Content>
-            <Feed.Date
-              content={moment(repo.pushed_at)
-                .endOf("day")
-                .fromNow()}
-            />
-            <Feed.Summary>
-              <a href={repo.html_url}>{repo.name}</a>
-            </Feed.Summary>
-          </Feed.Content>
-        </Feed.Event>
-      );
-    });
+    this.props.repos.map((repo, i) => (
+      <Feed.Event key={i}>
+        <Feed.Content>
+          <Feed.Date
+            content={moment(repo.pushed_at)
+              .endOf('day')
+              .fromNow()}
+          />
+          <Feed.Summary>
+            <a href={repo.html_url}>{repo.name}</a>
+          </Feed.Summary>
+        </Feed.Content>
+      </Feed.Event>
+    ));
 
   render() {
     return (
@@ -51,7 +49,7 @@ class Activity extends Component {
                   <Feed>{this.renderProjects()}</Feed>
                 </Card.Content>
                 <Card.Content extra>
-                  <a href="https://github.com/ryanefendy95?tab=repositories">
+                  <a href="https://github.com/Ryan-Efendy?tab=repositories">
                     See All Projects
                   </a>
                 </Card.Content>
@@ -92,7 +90,7 @@ class Activity extends Component {
                   </Feed>
                 </Card.Content>
                 <Card.Content extra>
-                  <a href="https://medium.com/@ryanefendy95">See All Stories</a>
+                  <a href="https://medium.com/@Ryan-Efendy">See All Stories</a>
                 </Card.Content>
               </Card>
             </Grid.Column>
@@ -100,15 +98,15 @@ class Activity extends Component {
             <Grid.Column computer={6} mobile={16} tablet={6}>
               <Timeline
                 dataSource={{
-                  sourceType: "profile",
-                  screenName: "_ryanefendy"
+                  sourceType: 'profile',
+                  screenName: '_ryanefendy'
                 }}
                 options={{
-                  username: "_ryanefendy",
-                  height: "500",
-                  width: "400"
+                  username: '_ryanefendy',
+                  height: '500',
+                  width: '400'
                 }}
-                onLoad={() => console.log("Timeline is loaded!")}
+                onLoad={() => console.log('Timeline is loaded!')}
               />
             </Grid.Column>
           </Grid>
